@@ -107,7 +107,7 @@ git pull
 |---|---|
 | 提示"没找到 Node.js"或"没找到 ffmpeg" | 回到第一步安装，**装完要重开窗口** |
 | 提示 `Chrome not found` | Chrome 不在默认位置。命令里加上路径：`node render.mjs --clip --chrome="C:\你的路径\chrome.exe" --out=out\video.mp4` |
-| `npm install` 很慢或失败 | 检查网络；可以换国内镜像：`npm config set registry https://registry.npmmirror.com` |
+| `npm install` 失败 | 检查网络后重试；仍然失败就把报错发给 Claude |
 | 画面里中文显示成方块 | 确认 `brush\assets\NotoSansSC.ttf` 存在；它在仓库里，`git pull` 一下 |
 | 渲染特别慢（每帧几秒以上） | 可能没用上显卡。在 brush 目录运行 `node gpu_probe.mjs "C:\Program Files\Google\Chrome\Application\chrome.exe"`，把输出发给 Claude |
 | 其它报错 | 把窗口里的报错文字完整复制下来，发给 Claude |
